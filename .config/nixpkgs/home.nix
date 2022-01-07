@@ -235,6 +235,7 @@
           "xinput set-prop 'SYNA8004:00 06CB:CD8B Touchpad' 'Synaptics Tap Action' 0, 0, 0, 0, 1, 3, 0"
           "xinput set-prop 'SYNA8004:00 06CB:CD8B Touchpad' 'Synaptics Tap Durations' 100, 100, 50"
           "xinput set-prop 'SYNA8004:00 06CB:CD8B Touchpad' 'Synaptics Palm Dimensions' 4, 100"
+          "syndaemon -K -i 0.20 -R -d"
         ];
       };
     };
