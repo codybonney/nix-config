@@ -160,12 +160,6 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
-  #services.picom = {
-  #  enable = true;
-  #  backend = "glx";
-  #  vSync = true;
-  #};
-
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
