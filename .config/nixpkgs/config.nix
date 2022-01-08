@@ -6,10 +6,4 @@
       inherit pkgs;
     };
   };
-
-  xsession.pointerCursor = {
-    package = pkgs.capitaine-cursors;
-    name = "Capitaine Cursors";
-    size = 24;
-  };
 }
