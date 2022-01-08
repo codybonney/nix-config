@@ -60,14 +60,6 @@
     synaptics.dev=''/dev/input/event11'';
     synaptics.enable = true;
     libinput.enable = false;
-    #libinput = {
-    #  enable = true;
-    #  touchpad = {
-    #    accelSpeed = "-0.10";
-    #    clickMethod = "clickfinger";
-    #    additionalOptions = "Option \"ScrollPixelDistance\" \"50\"";
-    #  };
-    #};
   };
 
   # Enable CUPS to print documents.
@@ -115,7 +107,7 @@
      nerdfonts
      parcellite
      slack
-     sublime
+     sublime4
      powertop
   ];
 
