@@ -97,6 +97,22 @@
           };
         };
         font = {
+          normal = {
+            family = "Menlo for Powerline";
+            style = "Regular";
+          };
+          bold = {
+            family = "Menlo for Powerline";
+            style = "Bold";
+          };
+          italic = {
+            family = "Menlo for Powerline";
+            style = "Italic";
+          };
+          bold_italic = {
+            family = "Menlo for Powerline";
+            style = "Bold Italic";
+          };
           size = 7;
         };
         window = {
