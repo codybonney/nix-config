@@ -20,6 +20,7 @@
       rofi
       sxhkd
       polybar
+      wmname
       xclip
       xfce.thunar
     ];
@@ -34,9 +35,11 @@
   };
 
   services = {
+    network-manager-applet = {
+      enable = true;
+    };
     picom = {
       enable = true;
-     # backend = "glx";
       vSync = true;
     };
     sxhkd = {
@@ -235,7 +238,13 @@
           "xinput set-prop 'SYNA8004:00 06CB:CD8B Touchpad' 'Synaptics Tap Action' 0, 0, 0, 0, 1, 3, 0"
           "xinput set-prop 'SYNA8004:00 06CB:CD8B Touchpad' 'Synaptics Tap Durations' 100, 100, 50"
           "xinput set-prop 'SYNA8004:00 06CB:CD8B Touchpad' 'Synaptics Palm Dimensions' 4, 100"
+          "xinput set-prop 'TPPS/2 Elan TrackPoint' 'Evdev Wheel Emulation' 1"
+          "xinput set-prop 'TPPS/2 Elan TrackPoint' 'Evdev Wheel Emulation Button' 2"
+          "xinput set-prop 'TPPS/2 Elan TrackPoint' 'Evdev Wheel Emulation Timeout' 200"
+          "xinput set-prop 'TPPS/2 Elan TrackPoint' 'Evdev Wheel Emulation Axes' 6 7 4 5"
           "syndaemon -K -i 0.20 -R -d"
+          "wmname LG3D" # fix IntelliJ IDEA
+          "systemctl --user start network-manager-applet.service"
         ];
       };
     };
