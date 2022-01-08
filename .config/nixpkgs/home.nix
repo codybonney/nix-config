@@ -1,6 +1,18 @@
 { config, pkgs, ... }:
 
 {
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Arc-Dark";
+      package = pkgs.arc-theme;
+    };
+    gtk3.extraConfig = {
+      gtk-application-prefer-dark-theme = true;
+      gtk-cursor-theme-name = "Capitaine Cursors";
+    };
+  };
+
   home = {
     stateVersion = "21.11";
     username = "cody";
@@ -24,14 +36,6 @@
       xclip
       xfce.thunar
     ];
-    file = {
-      ".config/gtk-3.0/settings.ini".text = ''
-      [Settings]
-      gtk-theme-name=Arc-Dark
-      gtk-application-prefer-dark-theme=true
-      gtk-cursor-theme-name=Capitaine Cursors
-      '';
-    };
   };
 
   services = {
