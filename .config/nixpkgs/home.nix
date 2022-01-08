@@ -21,6 +21,7 @@
       arc-theme
       buku
       capitaine-cursors
+      chromium
       dunst
       feh
       firefox
