@@ -247,7 +247,6 @@
         };
         startupPrograms = [
           "systemctl --user import-environment XAUTHORITY DISPLAY"
-          "systemctl --user start picom.service"
           "pnmixer"
           "polybar top"
           "feh --bg-fill ~/.background-image"
@@ -268,6 +267,8 @@
           "syndaemon -K -i 0.20 -R -d"
           "wmname LG3D" # fix IntelliJ IDEA
           "systemctl --user start network-manager-applet.service"
+          "systemctl --user start parcellite.service"
+          "systemctl --user start picom.service"
         ];
       };
     };
