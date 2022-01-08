@@ -97,7 +97,6 @@
   environment.systemPackages = with pkgs; [
      vim
      wget
-     bspwm
      pnmixer
      maim
      evtest

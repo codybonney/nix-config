@@ -166,6 +166,14 @@
         };
       };
     };
+    git = {
+      enable = true;
+      userName = "Cody Bonney";
+      userEmail = "me@codybonney.com";
+      extraConfig = {
+        core.editor = "vim";
+      };
+    };
     home-manager = {
       enable = true;
     };
@@ -178,14 +186,6 @@
         vim-nix
         vim-airline
       ];
-    };
-    git = {
-      enable = true;
-      userName = "Cody Bonney";
-      userEmail = "me@codybonney.com";
-      extraConfig = {
-        core.editor = "vim";
-      };
     };
   };
 
