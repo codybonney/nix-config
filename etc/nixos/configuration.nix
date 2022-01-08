@@ -112,6 +112,7 @@
   environment.sessionVariables = {
     MOZ_USE_XINPUT2 = "1";
     EDITOR = "vim";
+    BROWSER = "firefox";
   };
 
   programs.dconf.enable = true;
