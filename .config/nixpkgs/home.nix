@@ -29,6 +29,7 @@
       gimp
       htop
       neofetch
+      nodejs-17_x
       ripgrep
       rofi
       sxhkd
@@ -206,8 +207,6 @@
     "*color13" = "#ad7fa8";
     "*color14" = "#34e2e2";
     "*color15" = "#eeeeec";
-    #"Xcursor.theme" = "Capitaine Cursors";
-    #"Xcursor.size" = 24;
   };
 
   xsession = {
