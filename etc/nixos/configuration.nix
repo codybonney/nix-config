@@ -105,7 +105,6 @@
      jetbrains.idea-ultimate
      gnome.gucharmap
      nerdfonts
-     parcellite
      slack
      sublime4
      powertop

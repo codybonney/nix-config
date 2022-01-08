@@ -43,6 +43,9 @@
     network-manager-applet = {
       enable = true;
     };
+    parcellite = {
+      enable = true;
+    };
     picom = {
       enable = true;
       vSync = true;
@@ -246,7 +249,6 @@
           "systemctl --user import-environment XAUTHORITY DISPLAY"
           "systemctl --user start picom.service"
           "pnmixer"
-          "parcellite"
           "polybar top"
           "feh --bg-fill ~/.background-image"
           "xinput set-prop 'SYNA8004:00 06CB:CD8B Touchpad' 'Synaptics Scrolling Distance' 100, 100"
