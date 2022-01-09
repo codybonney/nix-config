@@ -19,6 +19,19 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.initrd.availableKernelModules = [
+    "xhci_pci"
+    "nvme"
+    "usb_storage"
+    "sd_mod"
+    "usb_storage"
+    "thinkpad_acpi"
+  ];
+  boot.initrd.kernelModules = [
+    "acpi_call"
+  ];
+
+  boot.extraModulePackages = with config.boot.kernelPackages; [ acpi_call ];
 
   # networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
