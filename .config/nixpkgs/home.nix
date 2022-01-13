@@ -27,6 +27,7 @@
       firefox
       fzf
       gimp
+      gnome.gnome-calculator
       htop
       neofetch
       nodejs-17_x
