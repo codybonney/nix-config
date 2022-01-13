@@ -108,18 +108,18 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     vim
-     wget
-     pnmixer
-     maim
      evtest
-     unzip
-     jetbrains.idea-ultimate
      gnome.gucharmap
+     jetbrains.idea-ultimate
+     maim
      nerdfonts
+     pnmixer
+     powertop
      slack
      sublime4
-     powertop
+     unzip
+     vim
+     wget
      zoom-us
   ];
 
