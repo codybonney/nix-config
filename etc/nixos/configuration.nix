@@ -143,6 +143,11 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
   services.tlp.enable = true;
+  services.undervolt = {
+    enable = true;
+    coreOffset = -100;
+    gpuOffset = -50;
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
