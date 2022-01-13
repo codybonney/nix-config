@@ -156,6 +156,7 @@
             "browser.urlbar.suggest.quicksuggest.sponsored" = false;
             "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
             "gfx.webrender.all" = true;
+            "media.ffmpeg.vaapi.enabled" = true;
             "mousewheel.default.delta_multiplier_x" = 90;
             "mousewheel.default.delta_multiplier_y" = 90;
             "mousewheel.with_alt.action" = 0;

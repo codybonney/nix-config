@@ -88,6 +88,9 @@
   hardware.opengl = {
     enable = true;
     driSupport = true;
+    extraPackages = with pkgs; [
+      intel-media-driver # LIBVA_DRIVER_NAME=iHD
+    ];
   };
 
   hardware.trackpoint.enable = true;
