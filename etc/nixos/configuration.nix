@@ -120,6 +120,7 @@
      slack
      sublime4
      powertop
+     zoom-us
   ];
 
   environment.sessionVariables = {
