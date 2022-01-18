@@ -267,6 +267,7 @@
           "xinput set-prop 'TPPS/2 Elan TrackPoint' 'Evdev Wheel Emulation Button' 2"
           "xinput set-prop 'TPPS/2 Elan TrackPoint' 'Evdev Wheel Emulation Timeout' 200"
           "xinput set-prop 'TPPS/2 Elan TrackPoint' 'Evdev Wheel Emulation Axes' 6 7 4 5"
+          "xinput set-prop 'TPPS/2 Elan TrackPoint' 'Device Accel Constant Deceleration' 2.000000"
           "syndaemon -K -i 0.20 -R -d"
           "wmname LG3D" # fix IntelliJ IDEA
           "systemctl --user start network-manager-applet.service"
