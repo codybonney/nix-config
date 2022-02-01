@@ -29,11 +29,13 @@
       gimp
       gnome.gnome-calculator
       htop
+      i3lock
       neofetch
       nodejs-17_x
       ripgrep
       rofi
       sxhkd
+      taskwarrior
       polybar
       wmname
       xclip
@@ -93,6 +95,9 @@
         "shift + XF86MonBrightnessDown" = "light -U 0.5";
         "XF86MonBrightnessUp" = "light -A 5";
         "XF86MonBrightnessDown" = "light -U 5";
+        "XF86AudioLowerVolume" = "amixer set Master 3%-";
+        "XF86AudioRaiseVolume" = "amixer set Master 3%+";
+        "XF86AudioMute" = "amixer set Master toogle";
       };
     };
   };
@@ -181,6 +186,14 @@
     };
     home-manager = {
       enable = true;
+    };
+    ssh = {
+      matchBlocks = {
+        "beta.codybonney.com" = {
+          hostname = "beta.codybonney.com";
+          user = "root";
+        };
+      };
     };
     vim = {
       enable = true;
