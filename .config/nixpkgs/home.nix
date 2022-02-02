@@ -22,6 +22,7 @@
       buku
       capitaine-cursors
       chromium
+      dig
       dunst
       feh
       firefox
