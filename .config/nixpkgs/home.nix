@@ -98,7 +98,7 @@
         "XF86MonBrightnessDown" = "light -U 5";
         "XF86AudioLowerVolume" = "amixer set Master 3%-";
         "XF86AudioRaiseVolume" = "amixer set Master 3%+";
-        "XF86AudioMute" = "amixer set Master toogle";
+        "XF86AudioMute" = "amixer set Master toggle";
       };
     };
   };
@@ -288,6 +288,7 @@
           "systemctl --user start network-manager-applet.service"
           "systemctl --user start parcellite.service"
           "systemctl --user start picom.service"
+          "systemctl --user start xautolock-session.service xss-lock.service"
         ];
       };
     };
