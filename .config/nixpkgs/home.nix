@@ -19,6 +19,7 @@
     homeDirectory = "/home/cody";
     packages = with pkgs; [
       arc-theme
+      betterlockscreen
       buku
       capitaine-cursors
       chromium
@@ -30,7 +31,6 @@
       gimp
       gnome.gnome-calculator
       htop
-      i3lock
       neofetch
       nodejs-17_x
       ripgrep
@@ -45,6 +45,10 @@
   };
 
   services = {
+    betterlockscreen = {
+      enable = true;
+      inactiveInterval = 1;
+    };
     network-manager-applet = {
       enable = true;
     };
@@ -74,6 +78,7 @@
         "super + {t,shift + t,z,f}" = "bspc node -t {tiled,pseudo_tiled,floating,fullscreen}";
         "super + ctrl + {x,y,z}" = "bspc node -g {locked,sticky,private}";
         "super + r" = "bspc node -R 90";
+        "super + l" = "betterlockscreen --lock";
         "super + {_,shift + }{a,s,w,d}" = "bspc node -{f,s} {west,south,north,east}";
         "super + {p,b,comma,period}" = "bspc node -f @{parent,brother,first,second}";
         "super + {_,shift + }c" = "bspc node -f {next,prev}";
@@ -288,6 +293,7 @@
           "systemctl --user start network-manager-applet.service"
           "systemctl --user start parcellite.service"
           "systemctl --user start picom.service"
+          "systemctl --user start xss-lock.service"
         ];
       };
     };
