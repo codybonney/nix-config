@@ -288,7 +288,6 @@
           "systemctl --user start network-manager-applet.service"
           "systemctl --user start parcellite.service"
           "systemctl --user start picom.service"
-          "systemctl --user start xautolock-session.service xss-lock.service"
         ];
       };
     };
