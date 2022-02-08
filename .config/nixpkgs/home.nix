@@ -193,6 +193,10 @@
     home-manager = {
       enable = true;
     };
+    rofi = {
+      enable = true;
+      theme = "Arc-Dark";
+    };
     ssh = {
       matchBlocks = {
         "beta.codybonney.com" = {
