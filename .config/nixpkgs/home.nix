@@ -39,6 +39,7 @@
       taskwarrior
       polybar
       wmname
+      yt-dlp
       xclip
       xfce.thunar
     ];
