@@ -119,6 +119,7 @@
      jetbrains.idea-ultimate
      maim
      nerdfonts
+     plexamp
      pnmixer
      powertop
      slack
