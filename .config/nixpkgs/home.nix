@@ -167,6 +167,7 @@
             "browser.urlbar.suggest.quicksuggest.nonsponsored" = false;
             "browser.urlbar.suggest.quicksuggest.sponsored" = false;
             "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
+            "full-screen-api.ignore-widgets" = true; # constrain fullscreen to tiled window
             "gfx.webrender.all" = true;
             "media.ffmpeg.vaapi.enabled" = true; # enable the use of VA-API with FFmpeg
             "media.ffvpx.enabled" = false; # disable the internal decoders for VP8/VP9
